@@ -1,5 +1,12 @@
 module Bombe
 
-# Write your package code here.
+    using ParetoSmooth
+    using Statistics
+    using StructArrays
+    using Tullio
+    using VectorizationBase
 
+    include("Loo.jl")
+    using .LeaveOneOut
+    export psis_loo
 end
